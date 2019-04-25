@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 12pt, openany]{book}
+
+%%% Работа с русским языком % для pdfLatex
+\usepackage{cmap}					% поиск в~PDF
+\usepackage{mathtext} 				% русские буквы в~фомулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst} 			% отступ 1 абзаца
+%%% ------------------------------------------
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[unicode, colorlinks, urlcolor=blue, linkcolor=blue, pagecolor=blue, citecolor=blue]{hyperref}
+\usepackage{blindtext}
+
+
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+
+\linespread{1.1} % Line spacing
+
+\def\chaptername{Лекция} % Семинар вместо главы
+\setcounter{tocdepth}{1} % Глубина отображения в оглавлении
+
+
+\makeatletter % Убирает нумерацию на страницах, где \chapter
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+	\thispagestyle{empty}% original style: plain
+	\global\@topnum\z@
+	\@afterindentfalse
+	\secdef\@chapter\@schapter}
+\makeatother
+
+% Set up the header and footer
+\fancypagestyle{pl}{
+	\fancyhead{}
+	% НЕ ИСПОЛЬЗУЕТСЯ. Может расширить fancy-линию, но смотрится некрасиво
+	%\fancyhfoffset[L]{15mm}% slightly less than 0.25in
+	%\fancyhfoffset[RO]{10mm}%
+	\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+	%\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+	%\lhead{\leftmark} % Top left header
+	\fancyhead[CO, CE]{\leftmark} % Top center head
+	\fancyhead[R]{\textbf{\thepage}}
+	%\fancyfoot[L]{\rightmark} % Top right header
+	%\lfoot{\lastxmark} % Bottom left footer. NOT USED
+	%\cfoot{} % Bottom center footer
+	%\rfoot{\textbf{\thepage}} % Bottom right footer
+	\setlength\parindent{10pt} % Removes all indentation from paragraphs
+	\fancyfoot{}
+}
+\pagestyle{pl}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
