@@ -92,29 +92,30 @@
 		\end{minipage}
 	\end{figure}
 
-	\begin{wrapfigure}{l}{0pt}
-		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-			\begin{axis}[
-				x=1.0cm,y=1.0cm,
-				axis lines=middle,
-				ymajorgrids=true,
-				xmajorgrids=true,
-				xmin=-7.0,
-				xmax=2.0,
-				ymin=-2.0,
-				ymax=6.0,
-				xtick={-7.0,-6.0,...,2.0},
-				ytick={-2.0,-1.0,...,6.0},
-				yticklabels={,,},
-				xticklabels={,,},
-				xlabel={$ \Delta G_0 $},
-				ylabel={$ \Delta G^{\neq} $}
-				]
-%				\clip(-7.,-2.) rectangle (2.,6.);
-				\draw [samples=50,rotate around={0.:(-3.,0.)},xshift=-3.cm,yshift=0.cm,line width=2.pt,domain=-8.0:8.0)] plot (\x,{(\x)^2/2/2.0});
-				\draw (-3.2427347858752804,0.6500525920360652) node[anchor=north west] {$-\lambda$};
-			\end{axis}
-		\end{tikzpicture}
+	\begin{wrapfigure}[12]{l}{0.45\linewidth}
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%			\begin{axis}[
+%				x=1.0cm,y=1.0cm,
+%				axis lines=middle,
+%				ymajorgrids=true,
+%				xmajorgrids=true,
+%				xmin=-7.0,
+%				xmax=2.0,
+%				ymin=-2.0,
+%				ymax=6.0,
+%				xtick={-7.0,-6.0,...,2.0},
+%				ytick={-2.0,-1.0,...,6.0},
+%				yticklabels={,,},
+%				xticklabels={,,},
+%				xlabel={$ \Delta G_0 $},
+%				ylabel={$ \Delta G^{\neq} $}
+%				]
+%%				\clip(-7.,-2.) rectangle (2.,6.);
+%				\draw [samples=50,rotate around={0.:(-3.,0.)},xshift=-3.cm,yshift=0.cm,line width=2.pt,domain=-8.0:8.0)] plot (\x,{(\x)^2/2/2.0});
+%				\draw (-3.2427347858752804,0.6500525920360652) node[anchor=north west] {$-\lambda$};
+%			\end{axis}
+%		\end{tikzpicture}
+		\centering\includegraphics[width=\linewidth]{lecture_03/G_scheme}
 		\caption{Схематическая зависимость $ \Delta G^{\neq} $}
 	\end{wrapfigure}
 
