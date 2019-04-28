@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/alekseik1/suprachemistry_latex.svg?branch=master)](https://travis-ci.org/alekseik1/suprachemistry_latex)
 # Конспекты супрамолекулярного деда
 В репо лежат конспекты аль.курса "Супрамолекулярная химия", читаемом на ФМХФ (ныне ФЭФМ) в 6 семестре.
 ## Запуск и компиляция
